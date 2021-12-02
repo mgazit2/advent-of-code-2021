@@ -12,14 +12,13 @@ def count_lines():
     for sub in subs:
         sub = sum(int(sub) for sub in sub)
         threes.append(sub)
-    print(threes)
     for number in threes:  # I'm lazy, so I didn't add CLI Args; change `threes` to `numbers` for part 1 solution
         if curr == 0:
             curr = int(number)
         if int(number) > curr:
             increases += 1
         curr = int(number)
-    print(increases)
+    print('Number of Increases: ', increases)
 
 
 if __name__ == '__main__':
