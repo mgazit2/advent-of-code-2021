@@ -1,3 +1,4 @@
+# Solution for Advent of Code day 1
 def count_lines():
     increases = 0
     subs = []

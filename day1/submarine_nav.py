@@ -1,3 +1,4 @@
+# Solution for Advent of Code, day 2
 def navigate():
     depth = 0
     aim = 0
