@@ -10,13 +10,10 @@ def navigate():
     for pair in directions:
         pair[1] = pair[1].replace('\n', '')
         if pair[0] == 'up':
-            print(pair)
             aim -= int(pair[1])
         elif pair[0] == 'down':
-            print(pair)
             aim += int(pair[1])
         elif pair[0] == 'forward':
-            print(pair)
             horizontal += int(pair[1])
             depth += int(pair[1]) * aim
     print('The final coordinates are: ', horizontal, depth)
